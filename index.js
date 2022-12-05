@@ -44,7 +44,7 @@ client.on("messageCreate", (message) => {
     }
 });
 
-client.login(CONFIG.token);
+client.login(process.env.TOKEN);
 
 function GetPokemon() {
     var id = Math.floor(Math.random() * (808 + 1)) + 0;
